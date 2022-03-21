@@ -3335,3 +3335,23 @@ func (v *Zone) Validate() error {
 
 	return nil
 }
+
+type VIP struct {
+	VIPID        *string `json:"vip_id" name:"vip_id"`
+	VIPName      *string `json:"vip_name" name:"vip_name"`
+	VIPAddr      *string `json:"vip_addr" name:"vip_addr"`
+	InstanceID   *string `json:"instance_id" name:"instance_id"`
+	InstanceName *string `json:"instance_name" name:"instance_name"`
+	VxNetID      *string `json:"vxnet_id" name:"vxnet_id"`
+	NICID        *string `json:"nic_id" name:"nic_id"`
+	CreateTime   *string `json:"create_time" name:"create_time"`
+	Description  *string `json:"description" name:"description"`
+	Owner        *string `json:"owner" name:"owner"`
+	RootUserID   *string `json:"root_user_id" name:"root_user_id"`
+	ConsoleID    *string `json:"console_id" name:"console_id"`
+	Controller   *string `json:"controller" name:"controller"`
+}
+
+func (v *VIP) Validate() error {
+	return nil
+}
